@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ATM_Machine.Constants;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,44 +20,50 @@ namespace ATM_Machine
 
          float currentAmount = 0;
         
-        private void Add_Click(object sender, EventArgs e)
+        public void Add_Click(object sender, EventArgs e)
         {
-            if (enterAmount.Text == "")
-            {
-                currentAmountBox.Text = "ERROR PLEASE ENTER VAILED NUMBER";
-            }
-            {
+           //if (enterAmount.Text == "")
+           //{
+           //   currentAmountBox.Text = FailMessage.inValid;
+           //}
+           //else
+           //{
+           //   currentAmountBox.Text = (currentAmount += float.Parse(enterAmount.Text)).ToString();
+           //    enterAmount.Clear();
+           //}
+           try
+           {
                 currentAmountBox.Text = (currentAmount += float.Parse(enterAmount.Text)).ToString();
                 enterAmount.Clear();
-            }
-        }
+           }
+           catch (Exception exx)
+           {
 
+                MessageBox.Show(exx.Message);
+           }
+        }
         private void Sub_Click(object sender, EventArgs e)
         {
-                if(enterAmount.Text == "")
-                {
-                    currentAmountBox.Text = "ERROR PLEASE ENTER VAILED NUMBER";
-                }
-                else
-                {   
-                    currentAmountBox.Text = (currentAmount -= float.Parse(enterAmount.Text)).ToString();
-                            enterAmount.Clear();
-                } 
-                    OverDrawn();
-        }
-        
-        private void OverDrawn ()
-        {
-            if (currentAmount < 0)
+            try
+            {
+                currentAmountBox.Text = (currentAmount -= float.Parse(enterAmount.Text)).ToString();
+                enterAmount.Clear();
+            }
+            catch (Exception exx)
             {
 
-                MessageBox.Show("please deposit money or face account being closed!!!");
+                MessageBox.Show(exx.Message);
             }
+            if (currentAmount < 0)
+            {
+                FailMessage.OverDrawn();
+            }
+               
         }
         private void LogOut (object sender, EventArgs e)
         {
             this.Hide();
-            FormMain f1 = new FormMain(); //this is the change, code for redirect
+            FormMain f1 = new (); //this is the change, code for redirect
             f1.ShowDialog();
 
         }

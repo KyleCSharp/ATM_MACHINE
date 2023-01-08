@@ -15,25 +15,25 @@ namespace ATM_Machine
         
         
 
-        private void pinTextBox_TextChanged(object sender, EventArgs e)
+        private void PinTextBox_TextChanged(object sender, EventArgs e)
         {
                 if (pinTextBox.Text == "1234" )
                 {
                     this.Hide();
-                    Form2 f2 = new Form2(); //this is the change, code for redirect  
+                    Form2 f2 = new (); //this is the change, code for redirect  
                     f2.ShowDialog();
                 }
            
             
         }
 
-        private void button_Click(object sender, EventArgs e)
+        private void Button_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            pinTextBox.Text = pinTextBox.Text + button.Text;
+            pinTextBox.Text += button.Text;
         }
 
-        private void backButton_Click(object sender, EventArgs e)
+        private void BackButton_Click(object sender, EventArgs e)
         {
                 pinTextBox.Text = "";
         }

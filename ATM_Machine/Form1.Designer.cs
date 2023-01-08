@@ -73,7 +73,7 @@
             this.pin1.TabIndex = 3;
             this.pin1.Text = "1";
             this.pin1.UseVisualStyleBackColor = false;
-            this.pin1.Click += new System.EventHandler(this.button_Click);
+            this.pin1.Click += new System.EventHandler(this.Button_Click);
             // 
             // pin4
             // 
@@ -86,7 +86,7 @@
             this.pin4.TabIndex = 6;
             this.pin4.Text = "4";
             this.pin4.UseVisualStyleBackColor = false;
-            this.pin4.Click += new System.EventHandler(this.button_Click);
+            this.pin4.Click += new System.EventHandler(this.Button_Click);
             // 
             // pin2
             // 
@@ -99,7 +99,7 @@
             this.pin2.TabIndex = 7;
             this.pin2.Text = "2";
             this.pin2.UseVisualStyleBackColor = false;
-            this.pin2.Click += new System.EventHandler(this.button_Click);
+            this.pin2.Click += new System.EventHandler(this.Button_Click);
             // 
             // pin3
             // 
@@ -112,7 +112,7 @@
             this.pin3.TabIndex = 8;
             this.pin3.Text = "3";
             this.pin3.UseVisualStyleBackColor = false;
-            this.pin3.Click += new System.EventHandler(this.button_Click);
+            this.pin3.Click += new System.EventHandler(this.Button_Click);
             // 
             // pin5
             // 
@@ -125,7 +125,7 @@
             this.pin5.TabIndex = 9;
             this.pin5.Text = "5";
             this.pin5.UseVisualStyleBackColor = false;
-            this.pin5.Click += new System.EventHandler(this.button_Click);
+            this.pin5.Click += new System.EventHandler(this.Button_Click);
             // 
             // pin6
             // 
@@ -138,7 +138,7 @@
             this.pin6.TabIndex = 10;
             this.pin6.Text = "6";
             this.pin6.UseVisualStyleBackColor = false;
-            this.pin6.Click += new System.EventHandler(this.button_Click);
+            this.pin6.Click += new System.EventHandler(this.Button_Click);
             // 
             // pin7
             // 
@@ -151,7 +151,7 @@
             this.pin7.TabIndex = 11;
             this.pin7.Text = "7";
             this.pin7.UseVisualStyleBackColor = false;
-            this.pin7.Click += new System.EventHandler(this.button_Click);
+            this.pin7.Click += new System.EventHandler(this.Button_Click);
             // 
             // pin8
             // 
@@ -164,7 +164,7 @@
             this.pin8.TabIndex = 12;
             this.pin8.Text = "8";
             this.pin8.UseVisualStyleBackColor = false;
-            this.pin8.Click += new System.EventHandler(this.button_Click);
+            this.pin8.Click += new System.EventHandler(this.Button_Click);
             // 
             // pin9
             // 
@@ -177,7 +177,7 @@
             this.pin9.TabIndex = 13;
             this.pin9.Text = "9";
             this.pin9.UseVisualStyleBackColor = false;
-            this.pin9.Click += new System.EventHandler(this.button_Click);
+            this.pin9.Click += new System.EventHandler(this.Button_Click);
             // 
             // pinTextBox
             // 
@@ -189,7 +189,7 @@
             this.pinTextBox.Size = new System.Drawing.Size(588, 78);
             this.pinTextBox.TabIndex = 14;
             this.pinTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.pinTextBox.TextChanged += new System.EventHandler(this.pinTextBox_TextChanged);
+            this.pinTextBox.TextChanged += new System.EventHandler(this.PinTextBox_TextChanged);
             // 
             // clearButton
             // 
@@ -202,7 +202,7 @@
             this.clearButton.TabIndex = 15;
             this.clearButton.Text = "CLAER";
             this.clearButton.UseVisualStyleBackColor = false;
-            this.clearButton.Click += new System.EventHandler(this.backButton_Click);
+            this.clearButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // FormMain
             // 

@@ -145,7 +145,7 @@
             this.MaximizeBox = false;
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "Login successful";
             this.ResumeLayout(false);
             this.PerformLayout();
 

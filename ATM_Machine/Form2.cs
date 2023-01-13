@@ -16,45 +16,36 @@ namespace ATM_Machine
         public Form2()
         {
             InitializeComponent();
+            currentAmountBox.Text = CurrentAmount.userAmount.ToString();
         }
 
-         float currentAmount = 0;
-        
         public void Add_Click(object sender, EventArgs e)
         {
-           //if (enterAmount.Text == "")
-           //{
-           //   currentAmountBox.Text = FailMessage.inValid;
-           //}
-           //else
-           //{
-           //   currentAmountBox.Text = (currentAmount += float.Parse(enterAmount.Text)).ToString();
-           //    enterAmount.Clear();
-           //}
            try
            {
-                currentAmountBox.Text = (currentAmount += float.Parse(enterAmount.Text)).ToString();
+                
+                currentAmountBox.Text = (CurrentAmount.userAmount += float.Parse(enterAmount.Text)).ToString();
                 enterAmount.Clear();
            }
-           catch (Exception exx)
+           catch (Exception ex)
            {
 
-                MessageBox.Show(exx.Message);
+                MessageBox.Show(ex.Message);
            }
         }
         private void Sub_Click(object sender, EventArgs e)
         {
             try
             {
-                currentAmountBox.Text = (currentAmount -= float.Parse(enterAmount.Text)).ToString();
+                currentAmountBox.Text = (CurrentAmount.userAmount -= float.Parse(enterAmount.Text)).ToString();
                 enterAmount.Clear();
             }
-            catch (Exception exx)
+            catch (Exception ex)
             {
 
-                MessageBox.Show(exx.Message);
+                MessageBox.Show(ex.Message);
             }
-            if (currentAmount < 0)
+            if (CurrentAmount.userAmount < 0)
             {
                 FailMessage.OverDrawn();
             }

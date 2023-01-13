@@ -10,23 +10,23 @@ namespace ATM_Machine
         {
             InitializeComponent();
         }
-        
-          
-        
-        
+       
 
         private void PinTextBox_TextChanged(object sender, EventArgs e)
         {
-                if (pinTextBox.Text == "1234" )
-                {
-                    this.Hide();
-                    Form2 f2 = new (); //this is the change, code for redirect  
-                    f2.ShowDialog();
-                }
-           
-            
+           if(pinTextBox.Text == "1234")
+           {
+             this.Hide();
+             Form2 f2 = new (); //this is the change, code for redirect  
+             f2.ShowDialog();
+           }
+           if(pinTextBox.Text == "9876")
+           {
+             Close();
+             Form2 f2 = new ();
+             f2.ShowDialog();
+           }
         }
-
         private void Button_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
@@ -35,7 +35,7 @@ namespace ATM_Machine
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-                pinTextBox.Text = "";
+            pinTextBox.Text = "";
         }
 
         

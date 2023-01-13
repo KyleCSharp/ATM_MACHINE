@@ -4,7 +4,9 @@ C:\Users\kylel\OneDrive\Desktop\Repos\ATM_Machine\ATM_Machine\bin\Debug\net7.0-w
 C:\Users\kylel\OneDrive\Desktop\Repos\ATM_Machine\ATM_Machine\bin\Debug\net7.0-windows\ATM_Machine.dll
 C:\Users\kylel\OneDrive\Desktop\Repos\ATM_Machine\ATM_Machine\bin\Debug\net7.0-windows\ATM_Machine.pdb
 C:\Users\kylel\OneDrive\Desktop\Repos\ATM_Machine\ATM_Machine\obj\Debug\net7.0-windows\ATM_Machine.csproj.AssemblyReference.cache
+C:\Users\kylel\OneDrive\Desktop\Repos\ATM_Machine\ATM_Machine\obj\Debug\net7.0-windows\ATM_Machine.FormMain.resources
 C:\Users\kylel\OneDrive\Desktop\Repos\ATM_Machine\ATM_Machine\obj\Debug\net7.0-windows\ATM_Machine.Form2.resources
+C:\Users\kylel\OneDrive\Desktop\Repos\ATM_Machine\ATM_Machine\obj\Debug\net7.0-windows\ATM_Machine.Properties.Resources.resources
 C:\Users\kylel\OneDrive\Desktop\Repos\ATM_Machine\ATM_Machine\obj\Debug\net7.0-windows\ATM_Machine.csproj.GenerateResource.cache
 C:\Users\kylel\OneDrive\Desktop\Repos\ATM_Machine\ATM_Machine\obj\Debug\net7.0-windows\ATM_Machine.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\kylel\OneDrive\Desktop\Repos\ATM_Machine\ATM_Machine\obj\Debug\net7.0-windows\ATM_Machine.AssemblyInfoInputs.cache
@@ -15,5 +17,3 @@ C:\Users\kylel\OneDrive\Desktop\Repos\ATM_Machine\ATM_Machine\obj\Debug\net7.0-w
 C:\Users\kylel\OneDrive\Desktop\Repos\ATM_Machine\ATM_Machine\obj\Debug\net7.0-windows\ATM_Machine.pdb
 C:\Users\kylel\OneDrive\Desktop\Repos\ATM_Machine\ATM_Machine\obj\Debug\net7.0-windows\ATM_Machine.genruntimeconfig.cache
 C:\Users\kylel\OneDrive\Desktop\Repos\ATM_Machine\ATM_Machine\obj\Debug\net7.0-windows\ref\ATM_Machine.dll
-C:\Users\kylel\OneDrive\Desktop\Repos\ATM_Machine\ATM_Machine\obj\Debug\net7.0-windows\ATM_Machine.FormMain.resources
-C:\Users\kylel\OneDrive\Desktop\Repos\ATM_Machine\ATM_Machine\obj\Debug\net7.0-windows\ATM_Machine.Properties.Resources.resources

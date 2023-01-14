@@ -200,7 +200,7 @@
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(192, 82);
             this.clearButton.TabIndex = 15;
-            this.clearButton.Text = "CLAER";
+            this.clearButton.Text = "CLEAR";
             this.clearButton.UseVisualStyleBackColor = false;
             this.clearButton.Click += new System.EventHandler(this.BackButton_Click);
             // 

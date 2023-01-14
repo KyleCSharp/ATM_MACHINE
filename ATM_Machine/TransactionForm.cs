@@ -16,7 +16,7 @@ namespace ATM_Machine
         public transactionForm()
         {
             InitializeComponent();
-            currentAmountBox.Text = CurrentAmount.userAmount.ToString();
+            currentAmountBox.Text = CurrentAmount.userAmount.ToString(); // get current amount everytime it opens form
         }
 
         public void Add_Click(object sender, EventArgs e)
@@ -24,13 +24,13 @@ namespace ATM_Machine
            try
            {
                 
-                currentAmountBox.Text = (CurrentAmount.userAmount += float.Parse(enterAmount.Text)).ToString();
-                enterAmount.Clear();
+                currentAmountBox.Text = (CurrentAmount.userAmount += float.Parse(enterAmount.Text)).ToString();//the math for deposit button takes current amount + the the amount the user entered = currentAmount.text
+                enterAmount.Clear();//clears the entered amount
            }
            catch (Exception ex)
            {
 
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message);//error messasge box for incorrect vaule entered
            }
         }
         private void Sub_Click(object sender, EventArgs e)
@@ -45,7 +45,7 @@ namespace ATM_Machine
 
                 MessageBox.Show(ex.Message);
             }
-            if (CurrentAmount.userAmount < 0)
+            if (CurrentAmount.userAmount < 0)// if account goes below 0 runs the fail messsage 
             {
                 FailMessage.OverDrawn();
             }
@@ -53,7 +53,7 @@ namespace ATM_Machine
             
                
         }
-        private void LogOut (object sender, EventArgs e)
+        private void LogOut (object sender, EventArgs e)//logout button takes you back to the login form
         {
             this.Hide();
             FormMain f1 = new (); //this is the change, code for redirect

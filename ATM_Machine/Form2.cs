@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace ATM_Machine
 {
-    public partial class Form2 : Form
+    public partial class transactionForm : Form
     {
-        public Form2()
+        public transactionForm()
         {
             InitializeComponent();
             currentAmountBox.Text = CurrentAmount.userAmount.ToString();

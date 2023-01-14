@@ -17,13 +17,13 @@ namespace ATM_Machine
            if(pinTextBox.Text == "1234")
            {
              this.Hide();
-             Form2 f2 = new (); //this is the change, code for redirect  
+             transactionForm f2 = new (); //this is the change, code for redirect  
              f2.ShowDialog();
            }
            if(pinTextBox.Text == "9876")
            {
              Close();
-             Form2 f2 = new ();
+             transactionForm f2 = new ();
              f2.ShowDialog();
            }
         }

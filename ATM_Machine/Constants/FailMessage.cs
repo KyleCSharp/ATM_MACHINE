@@ -10,7 +10,7 @@ namespace ATM_Machine.Constants
     public class FailMessage
     {
         public const string inValid = "ERROR PLEASE ENTER VALID NUMBER";
-        public const string exep = "ERROR PLEASE ENTER VALID NUMBER";
+       
 
         public static void OverDrawn()
         {

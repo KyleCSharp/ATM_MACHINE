@@ -45,7 +45,7 @@ namespace ATM_Machine
 
                 MessageBox.Show(ex.Message);
             }
-            if (CurrentAmount.userAmount < 0)// if account goes below 0 runs the fail messsage 
+            if (CurrentAmount.userAmount < 0)// if account goes below 0 runs the fail messsage. listed in the fail message class
             {
                 FailMessage.OverDrawn();
             }
